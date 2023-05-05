@@ -9,28 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<br>
-
 <body>
     <section class="background-banner">
         <nav class="topnav">
-            <!-- test -->
+            <a href="./myportfolio.html" class="active"><i class="fa fa-home"></i> accueil</a>
             <div class="dropdown">
-                <button class="topnav">Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
+                <button href="#parcours scolaire" class="topnav">parcours scolaire</button>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a href="#link1">Link 1</a>
+                    <a href="#link2">Link 2</a>
+                    <a href="#link3">Link 3</a>
                 </div>
-                <!-- test -->
-                <a href="#contact">contact</a>
-                <a href="./bio-page.html">bio</a>
-                <a href="#parcours scolaire">parcours scolaire</a>
-                <a href="./myportfolio.html" class="active"><i class="fa fa-home"></i> accueil</a>
-                </a>
+            </div>
+            <a href="./bio-page.html">bio</a>
+            <a href="#contact">contact</a>
         </nav>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <header role="banner">
             <h1 id="name" class="main-title">chloé vu</h1>
@@ -98,6 +95,19 @@
 
             document.getElementById("name").innerHTML = "My name is" + firstName + " " + lastName
 
+        }
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
     </script>
 </body>

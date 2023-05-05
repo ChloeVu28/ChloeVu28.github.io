@@ -12,12 +12,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    margin: 0px;
+    margin: 0;
     box-shadow: 0 0 8px white inset;
-}
-
-body {
-    line-height: 40px;
 }
 
 .box {
@@ -39,6 +35,48 @@ body {
     fill: rgb(119, 158, 146);
     color: rgb(119, 158, 146);
 }
+
+
+
+
+/* navbar content and other */
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navbar content and other */
+
+
+
 
 .form-settings {
     margin: 20px;
@@ -81,6 +119,12 @@ body {
     margin: 20px;
 }
 
+nav {
+    position: sticky;
+    display: flex;
+    float: right;
+}
+
 .newsletter-box {
     border-color: rgb(119, 158, 146);
     border-style: solid;
@@ -106,12 +150,18 @@ p {
     font-size: 18px;
     font-family: Georgia;
     margin: 20px;
+    line-height: 40px;
 }
 
 .topnav {
-    margin-top: 0px;
+    margin-top: 0;
     background-color: transparent;
-    overflow: hidden;
+}
+
+.topnav a:hover {
+    background-color: rgb(119, 158, 146);
+    position: sticky;
+    color: white;
 }
 
 .topnav a {
@@ -121,47 +171,26 @@ p {
     font-size: 22px;
     font-weight: bold;
     padding: 15px 18px;
-    float: right;
     color: rgb(119, 158, 146);
 }
 
-.topnav a:hover {
+/* .topnav a:hover {
     background-color: rgb(119, 158, 146);
     color: white;
-}
+} */
 
-
-
-
-
-/* test */
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: rgb(119, 158, 146);
-    padding: 12px 16px;
+.topnav button {
+    text-align: center;
     text-decoration: none;
-    display: block;
-    text-align: left;
+    font-family: Times;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 13px 18px;
+    color: rgb(119, 158, 146);
+    border-color: transparent;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.topnav button:hover {
+    background-color: rgb(119, 158, 146);
+    color: white;
 }
