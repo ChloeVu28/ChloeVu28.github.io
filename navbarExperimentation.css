@@ -1,0 +1,41 @@
+body {
+    background-color: bisque;
+    margin: 0 0 0 0;
+}
+
+nav {
+    background-color: blueviolet;
+    justify-content: center;
+    display: flex;
+}
+
+nav a {
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.dropdown {
+    background-color: transparent;
+    font-family: Times;
+    font-style: bold;
+}
+
+.dropdown:hover {
+    color: aquamarine;
+}
+
+.dropdown-content {
+    background-color: transparent;
+    color: white;
+}
+
+.dropdown-content:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
